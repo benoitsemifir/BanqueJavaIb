@@ -1,6 +1,6 @@
-package Banque;
+package Banque.comptes;
 
-import Banque.Interfaces.ICompteRemunere;
+import Banque.comptes.interfaces.ICompteRemunere;
 
 public class CompteRemunere extends Compte implements ICompteRemunere {
 	private double taux;
@@ -30,7 +30,7 @@ public class CompteRemunere extends Compte implements ICompteRemunere {
 	
 	@Override
 	public String toString() {
-		String str = super.toString() + this.getTaux();
+		String str = super.toString() + " taux : " + this.getTaux();
 		return str;
 	}
 }

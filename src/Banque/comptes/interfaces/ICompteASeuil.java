@@ -1,4 +1,4 @@
-package Banque.Interfaces;
+package Banque.comptes.interfaces;
 
 public interface ICompteASeuil {
 	void retirer(double valeur);

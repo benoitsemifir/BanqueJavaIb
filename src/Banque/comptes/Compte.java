@@ -1,4 +1,4 @@
-package Banque;
+package Banque.comptes;
 
 public class Compte {
 

@@ -1,4 +1,8 @@
-package Banque;
+package Banque.clients;
+
+import java.util.Arrays;
+
+import Banque.comptes.Compte;
 
 public class Client  {
 	private String nom;
@@ -12,7 +16,6 @@ public class Client  {
 	}
 
 	public void setComptes(Compte[] comptes) {
-		
 		this.comptes = comptes;
 	}
 
@@ -75,6 +78,6 @@ public class Client  {
 	@Override
 	public String toString() {
 		return "Client [nom=" + nom + ", prenom=" + prenom + ", age=" + age + ", numero=" + numero + ", comptes="
-				+ comptes + "]";
+				+ Arrays.toString(comptes) + "]";
 	}
 }

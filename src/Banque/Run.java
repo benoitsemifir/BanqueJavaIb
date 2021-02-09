@@ -1,6 +1,13 @@
 package Banque;
 
-import Banque.Interfaces.ICompteRemunere;
+import java.util.Arrays;
+
+import Banque.clients.Client;
+import Banque.comptes.Compte;
+import Banque.comptes.CompteASeuil;
+import Banque.comptes.CompteAseuilRemunere;
+import Banque.comptes.CompteRemunere;
+import Banque.comptes.interfaces.ICompteRemunere;
 
 public class Run {
 
@@ -15,7 +22,7 @@ public class Run {
 
 		System.out.println(client.toString());
 
-		System.out.println(client.getComptes());
+		System.out.println(Arrays.toString(client.getComptes()));
 
 		CompteRemunere livretA = new CompteRemunere(285, 10, 0.005);
 
@@ -31,7 +38,7 @@ public class Run {
 
 		System.out.println(client.toString());
 
-		System.out.println(client.getComptes());
+		System.out.println(Arrays.toString(client.getComptes()));
 
 		System.out.println(client.getCompte(8).getSolde());
 		client.getCompte(8).retirer(20);
@@ -47,8 +54,8 @@ public class Run {
 		}
 	}
 
-	//System.out.println(Arrays.toString(client.getComptes()));
-	System.out.printf("Le client %s a les comptes %s", client.toString(), client.getComptes());
+	System.out.println(Arrays.toString(client.getComptes()));
+	//System.out.printf("Le client %s a les comptes %s", client.toString(), client.getComptes());
 	//System.out.format("Le client %s a les comptes %s", client.toString(), client.getComptes());
 	//System.out.println(String.format("Le client %s a les comptes %s", client.toString(), client.getComptes()));
 

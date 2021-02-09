@@ -1,6 +1,6 @@
-package Banque;
+package Banque.comptes;
 
-import Banque.Interfaces.ICompteASeuil;
+import Banque.comptes.interfaces.ICompteASeuil;
 
 public class CompteASeuil extends Compte implements ICompteASeuil {
 
